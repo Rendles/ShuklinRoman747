@@ -20,3 +20,10 @@
 - git add .
 - git commit -m 
 - git push -u origin pr2
+
+# Результат
+
+При помощи компилятора gcc была проверена работоспособность програм, ниже будут продемонстрированы скрины
+
+![alt text](https://pp.userapi.com/c850528/v850528717/ca010/_nBxY_ztaR8.jpg)
+
