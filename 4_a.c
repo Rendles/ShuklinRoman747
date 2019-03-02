@@ -10,7 +10,7 @@ while (i<=n)
 {
 scanf("%d", &a);
 sum = sum + a*(-1);
-i++
+i++;
 }
-prinf("%d", sum);
+printf("%d", sum);
 }
