@@ -13,5 +13,5 @@ sum = sum + a*(-1);
 i++;
 }
 printf("%d", sum);
-}
-                        
+}                     
+                                           
