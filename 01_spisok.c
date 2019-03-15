@@ -181,7 +181,6 @@ int main()
 	scanf("%d",&z);
 	removeFirst(list,z);
 	print(list);
-
 	clear(list);
 	return 0;
 }
