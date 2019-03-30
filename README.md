@@ -21,7 +21,7 @@
   
   Программа:
   
- ![alt text] (https://pp.userapi.com/c855616/v855616603/11e2b/FNXjXAnrDrk.jpg)
+ ![alt text](https://pp.userapi.com/c855616/v855616603/11e2b/FNXjXAnrDrk.jpg)
  
    ### Программа 
   
