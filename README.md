@@ -43,6 +43,6 @@
 
   Выше был продемонстрирован краткий экскурс по данной практической работе, ниже будут представленны ссылки на источники, которые были использованы для оформления данного документа.
  #### Использованные источники
- [Ссылка на пример оформления данного текстового документа](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
- [Бинарные деревья](https://habr.com/ru/post/267855/)
- [Реализация бинарного дерева](https://tim4ous.com/realizatsiya-binarnogo-dereva-poiska-v-si/)
+ - [Ссылка на пример оформления данного текстового документа](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+ - [Бинарные деревья](https://habr.com/ru/post/267855/)
+ - [Реализация бинарного дерева](https://tim4ous.com/realizatsiya-binarnogo-dereva-poiska-v-si/)
