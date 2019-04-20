@@ -24,7 +24,7 @@ typedef struct list
 {
 ListNode* first;
 ListNode* last;
-} List;
+} List; 
 
 void init(Tree* tree)
 {
@@ -143,13 +143,11 @@ if (ptrlist1->first == NULL)
 {
 if (Vague->Value == val && c == 1)
 ;
-//printf(" ");
 else
 printf("%d ", Vague->Value);
 }
 else if (Vague->Value == val && c == 1)
 ;
-//printf(" ");
 else
 printf("%d ", Vague->Value);
 if (Vague->left)
@@ -190,20 +188,6 @@ else
 printf(" ");
 }
 
-void Shift(Node* root) {
-if (root) {
-Shift(root->left);
-Shift(root->right);
-printf("%d", root->Value);
-}
-}
-void inShift(Node* node) {
-if (node == NULL) return;
-printf("%d", node->Value);
-inShift(node->left);
-printf("%d", node->Value);
-inShift(node->right);
-}
 int main()
 {
 Tree* tree = (Tree*)malloc(sizeof(Node));

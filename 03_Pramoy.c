@@ -14,6 +14,7 @@ typedef struct Tree
 struct Node* root;
 int count;
 } Tree;
+
 typedef struct ListNode
 {
 Node* ptr_node_tree;
@@ -25,8 +26,9 @@ typedef struct List
 ListNode* first;
 ListNode* last;
 } List;
-void init(Tree* tree) {
 
+void init(Tree* tree) 
+{
 tree->root = NULL;
 }
 void CreateList(List* q)
@@ -35,38 +37,10 @@ q->first = NULL;
 q->last = NULL;
 };
 
-int Push(List* q, Node* n)
-{
-ListNode* newList = (ListNode*)malloc(sizeof(ListNode));
-newList->ptr_node_tree = n;
-newList->next = NULL;
-if (q->first)
-q->last->next = newList;
-else
-q->first = newList;
-q->last = newList;
-return 0;
-}
-
-void ClearList(List* q)
-{
-ListNode* Vague, * nq;
-Vague = q->first;
-do
-{
-nq = Vague;
-Vague = Vague->next;
-free(nq);
-}
-while (Vague);
-q->first = NULL;
-q->last = NULL;
-}
 int Insert(Tree* tree, int value) {
 Node* Vague = (Node*)malloc(sizeof(Node));
 
 Vague->value = value;
-
 
 if (tree->root == NULL) {
 Vague->left = Vague->right = NULL;
@@ -107,85 +81,6 @@ else
 root3->right = Vague;
 tree->count++;
 return 0;
-}
-void print(Node* node)
-{
-if (node)
-{
-List list1, list2;
-List* ptrlist1 = &list1;
-List* ptrlist2 = &list2;
-CreateList(ptrlist1);
-CreateList(ptrlist2);
-Node* Vague = NULL;
-ListNode* q = NULL;
-int c = 0, val = node->value, j = 0;
-Node* l = node->left;
-Node* r = node->right;
-Push(ptrlist1, node);
-while (1)
-{
-while (ptrlist1->first)
-{
-if (ptrlist1->first)
-{
-ListNode* nodelist_pop;
-Vague = ptrlist1->first->ptr_node_tree;
-nodelist_pop = ptrlist1->first;
-ptrlist1->first = ptrlist1->first->next;
-if (ptrlist1->first == NULL)
-ptrlist1->last = NULL;
-free(nodelist_pop);
-}
-else
-Vague = NULL;
-if (ptrlist1->first == NULL)
-{
-if (Vague->value == val && c == 1)
-printf(" ");
-else
-printf("%d ", Vague->value);
-}
-else if (Vague->value == val && c == 1)
-printf(" ");
-else
-printf("%d ", Vague->value);
-if (Vague->left)
-Push(ptrlist2, Vague->left);
-else
-Push(ptrlist2, node);
-if (Vague->right)
-Push(ptrlist2, Vague->right);
-else
-Push(ptrlist2, node);
-}
-node->left = node->right = NULL;
-c = 1;
-q = ptrlist2->first;
-while (ptrlist2->first->ptr_node_tree->value == val)
-{
-ptrlist2->first = ptrlist2->first->next;
-if (ptrlist2->first->next == NULL)
-if (ptrlist2->first->ptr_node_tree->value == val)
-{
-j = 1;
-node->left = l;
-node->right = r;
-ClearList(ptrlist2);
-break;
-}
-}
-ptrlist2->first = q;
-if (j == 1)
-break;
-ptrlist1->first = ptrlist2->first;
-ptrlist1->last = ptrlist2->last;
-ptrlist2->first = NULL;
-ptrlist2->last = NULL;
-}
-}
-else
-printf(" ");
 }
 
 void Shift(Node* root)
