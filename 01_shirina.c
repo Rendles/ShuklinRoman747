@@ -30,6 +30,7 @@ void init(Tree* tree)
 {
 tree->root = NULL;
 }
+
 void CreateList(List* q)
 {
 q->first = NULL;
