@@ -50,7 +50,7 @@
 
    Выше был продемонстрирован краткий экскурс по данной практической работе, ниже будут представленны ссылки на источники, которые были использованы для оформления данного документа.
  
- [Ссылка на пример оформления данного текстового документа](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
- [Обход двоичного дерева](https://learnc.info/adt/binary_tree_traversal.html)
- [Парень рассказывает о деревьях](https://www.youtube.com/watch?v=wtgLQE9hjuk)
+ - [Ссылка на пример оформления данного текстового документа](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+ - [Обход двоичного дерева](https://learnc.info/adt/binary_tree_traversal.html)
+ - [Парень рассказывает о деревьях](https://www.youtube.com/watch?v=wtgLQE9hjuk)
  
