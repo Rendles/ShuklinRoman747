@@ -34,7 +34,6 @@ tree->root = Vague;
 tree->count = 1;
 return 0;
 }
-
 if (Vague->Value == tree->root->Value)
 return -1;
 
