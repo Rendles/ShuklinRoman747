@@ -97,6 +97,7 @@ printf("%d ", temp[i]->Value);
 }
 printf("\n");
 }
+
 int main()
 {
 Tree* tree = malloc(sizeof tree);
