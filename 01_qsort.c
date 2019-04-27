@@ -28,6 +28,7 @@ if (left != right)
 numbers[right] = numbers[left];
 right--;
 }
+  
 }
 numbers[left] = supp;
 supp = left;
