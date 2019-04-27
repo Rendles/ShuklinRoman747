@@ -8,7 +8,6 @@ if (shag < 1)
 shag = 1;
 return shag;
 }
-
 void sort(int arr[], int N)
 {
 int shag = N;
