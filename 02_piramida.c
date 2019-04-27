@@ -59,7 +59,6 @@ a[0] = a[i];
 a[i] = temp;
 down(a, 0, i - 1);
 }
-
 for (int i = 0; i < f; i++)
 printf("%d ", a[i]);
 printf("\n");
