@@ -30,7 +30,7 @@ int otsev(int* arr, int rt, int btm)
 	return tmp;
 }
 
-int pyramida(int* arr, int arr_len) //ïèðàìèäàëüíàÿ
+int pyramida(int* arr, int arr_len) //Ã¯Ã¨Ã°Ã Ã¬Ã¨Ã¤Ã Ã«Ã¼Ã­Ã Ã¿
 {
 	int tmp = 0;
 	for (int i = (arr_len / 2); i >= 0; i--)
